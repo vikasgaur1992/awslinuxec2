@@ -6,7 +6,7 @@ resource "aws_instance" "example" {
   subnet_id       = var.subnet_id
   security_groups = [var.security_group_id]
   key_name        = var.key_name
-  count = 2
+  count = 1
 user_data = <<-EOF
              #!/bin/bash
               yum update -y
