@@ -1,10 +1,9 @@
-/*terraform {
+terraform {
   backend "s3" {
-    bucket         = "<your-bucket>"
-    key            = "awslinuxec2/terraform.tfstate"
-    region         = "<region>"
-    dynamodb_table = "<lock-table>"
+    bucket         = "my-unique-tf-state-bucket-vg"
+    key            = "hnesstest/dev/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-locks"
     encrypt        = true
   }
 }
-*/
