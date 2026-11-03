@@ -1,4 +1,4 @@
-terraform {
+/*terraform {
   backend "s3" {
     bucket         = "my-unique-tf-state-bucket-vg"
     key            = "hnesstest/dev/terraform.tfstate"
@@ -7,3 +7,4 @@ terraform {
     encrypt        = true
   }
 }
+*/
